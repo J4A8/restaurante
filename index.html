@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Life Pleasure</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- CSS Libraria-->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Caveat+Brush&family=Josefin+Sans:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    
+
+
+    </head>
+
+    <body>
+        <!-- Barra de menu -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Life <span>Pleasure</span></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="nosotros.html" class="nav-item nav-link">Nosotros</a>
+                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        <a href="reserva.html" class="nav-item nav-link">Reserva</a>
+                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+
+
+        <!-- Portada -->
+        <div class="carousel">
+
+
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="img/portadainicio.jpg" alt="Image">
+                        </div>
+                        <div class="carousel-text">
+                            <h1>Life<span> Pleasure</span> 
+                            <p>
+                                Disfruta la vida en un solo plato
+                            </p>
+                            
+                            <div class="carousel-btn">
+                                <a class="btn custom-btn" href="menu.html">VER MENU</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+          
+        </div>
+        <!--  End -->
+
+
+        <script>
+            window.addEventListener('mouseover', initLandbot, { once: true });
+            window.addEventListener('touchstart', initLandbot, { once: true });
+            var myLandbot;
+            function initLandbot() {
+              if (!myLandbot) {
+                var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+                s.addEventListener('load', function() {
+                  var myLandbot = new Landbot.Livechat({
+                    configUrl: 'https://chats.landbot.io/v3/H-1260315-NT1FXO03S60N61C6/index.json',
+                  });
+                });
+                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+              }
+            }
+            </script>
+             <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+ 
+    </body>
+</html>

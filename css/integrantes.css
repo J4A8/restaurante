@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+body {
+    background-color: black;
+    
+    background-size: cover;
+    
+    
+
+}
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.9;
+    overflow: hidden;
+    z-index: -1;
+}
+
+
+.TAREA {
+
+
+    
+    width: 500px;
+    
+    margin: auto;
+    
+    margin-top: 70px;
+    color: white;
+    text-align: center;
+    top: 20px;
+    
+    border-radius: 2%;
+    z-index: -1;
+
+}
+.TAREA img {
+    border-radius: 10%;
+    
+}
+
+.TAREA h1{
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: 100;
+    margin: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+.TAREA h2{
+    margin: 15px 0 20px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.TAREA p {
+    width: 500px;
+    text-align: justify;
+}
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: -2;
+}
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.9;
+    overflow: hidden;
+    z-index: -1;
+}
+
+audio {
+    position: absolute;
+    
+   
+    
+}
+.TAREA ul {
+    list-style: none;
+    margin-top: 20px;
+}
+.TAREA ul li{
+    display: inline-block;
+}
+.TAREA ul li a {
+    color: white;
+    font-size: 45px;
+    padding: 15px 10px;
+    display: block;
+    transition: all .5s ease-in-out;
+}
+.f:hover{
+    color: rgb(78, 109, 211);
+    
+    transform: scale(1.3);
+
+}
+.g:hover{
+    color: rgb(187, 60, 60);
+    
+    transform: scale(1.3);
+
+}
+.t:hover{
+    color: rgb(68, 68, 68);
+    
+    transform: scale(1.3);
+
+}
+.i:hover{
+    color: rgb(224, 130, 106);
+    
+    transform: scale(1.3);
+
+}
+
+.f {
+    color: white;
+    font-size: 45px;
+    padding: 15px 10px;
+    display: block;
+    transition: all .5s ease-in-out;
+    position: relative;
+
+}
+.i {
+    color: white;
+    font-size: 45px;
+    padding: 15px 10px;
+    display: block;
+    transition: all .5s ease-in-out;
+    position: relative;
+
+}
+.g {
+    color: white;
+    font-size: 45px;
+    padding: 15px 10px;
+    display: block;
+    transition: all .5s ease-in-out;
+    position: relative;
+
+}
+.t {
+    color: white;
+    font-size: 45px;
+    padding: 15px 10px;
+    display: block;
+    transition: all .5s ease-in-out;
+    position: relative;
+
+}
+.TAREA ul li a1 {
+
+width: 500px;
+    
+    margin: auto;
+    margin-top: 10%;
+    
+    color: white;
+    text-align: center;
+    top: 20px;
+    
+    border-radius: 2%;
+
+}
+.TAREA ula {
+    position: absolute;
+    float: right;
+    
+}
+.TAREA h3 {
+    text-align: 0px;
+}
+
+@media screen and (max-width:750px) {
+
+
+.TAREA p  {
+    width: 300px;
+    justify-content: center;
+    margin-left: 100px;
+}
+video{
+    position: absolute;
+    height: 100%;
+	width: 100%;
+    object-fit: cover;
+    overflow: auto;
+    
+	
+	
+}
+
+}
+
+
+/****************menu***************/
+
+.navbar {
+    position: relative;
+    transition: .5s;
+    z-index: 999;
+}
+
+.navbar.nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.navbar .navbar-brand {
+    margin: 0;
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 0px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    transition: .5s;
+    
+}
+
+.navbar .navbar-brand span {
+    color: #15ff00;
+}
+
+.navbar .navbar-brand:hover {
+    color: #ffffff;
+}
+
+.navbar .navbar-brand:hover span {
+    color: #ffffff;
+}
+
+.navbar .navbar-brand img {
+    max-width: 100%;
+    max-height: 40px;
+}
+
+.navbar .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #f8f9fa;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        padding: 30px 60px;
+        background: transparent !important;
+        z-index: 9;
+    }
+    
+    .navbar.nav-sticky {
+        padding: 10px 60px;
+        background: #ffffff !important;
+    }
+    
+    .navbar .navbar-brand {
+        color: #ffffff;
+    }
+    
+    .navbar.nav-sticky .navbar-brand {
+        color: #ffffff;
+    }
+
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .nav-link:focus {
+        padding: 10px 10px 8px 10px;
+        font-family: 'Nunito', sans-serif;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .navbar-light.nav-sticky .navbar-nav .nav-link,
+    .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
+        color: #666666;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link.active {
+        color: #15ff00;
+    }
+    
+    .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
+    .navbar-light.nav-sticky .navbar-nav .nav-link.active {
+        color: #15ff00;
+    }
+}
+
+@media (max-width: 991.98px) {   
+    .navbar {
+        padding: 15px;
+        background: #ffffff !important;
+    }
+    
+    .navbar .navbar-brand {
+        color: #15ff00;
+    }
+    
+    .navbar .navbar-nav {
+        margin-top: 15px;
+    }
+    
+    .navbar a.nav-link {
+        padding: 5px;
+    }
+    
+    .navbar .dropdown-menu {
+        box-shadow: none;
+    }
+}
+

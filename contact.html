@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Life Pleasure</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+          <!-- CSS Libraria -->
+          <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <link href="css/contacto.css" rel="stylesheet">
+        
+        
+    </head>
+
+    <body>
+         
+            <!-- Barra de menu -->
+            <div class="navbar navbar-expand-lg bg-light navbar-light">
+                <div class="container-fluid">
+                    <a href="index.html" class="navbar-brand">Life <span>Pleasure</span></a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav ml-auto">
+                            <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                            <a href="nosotros.html" class="nav-item nav-link">Nosotros</a>
+                            <a href="menu.html" class="nav-item nav-link">Menu</a>
+                            <a href="reserva.html" class="nav-item nav-link">Reserva</a>
+                            <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End -->
+            
+        
+
+        <br><br><br><br>
+        <!-- Contact Start -->
+        <div class="contact">
+            <div class="container">
+             
+               
+                <div class="row contact-form">
+                    <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39628.68684957926!2d-77.046388791623!3d-12.050299614718043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2sLima!5e1!3m2!1ses-419!2spe!4v1656004089901!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="success"></div>
+                        <form  action="php/contact.php" method="post" onsubmit="return Enviar();"  >
+                            <div class="control-group" >
+                                <input type="text" class="form-control" name="nombre" id="name" placeholder="Your Name" required="" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group" >
+                                <input type="email" class="form-control" name="mail" id="email" placeholder="Your Email" required=""  />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group" name="asunto">
+                                <input type="text" class="form-control" name="asunto" id="subject" placeholder="Subject"  required="" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group" name="mensaje">
+                                <textarea class="form-control" id="message" name="mensaje" placeholder="Message" required="" ></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button onclick="Enviar()" class="btn custom-btn" type="submit">Enviar mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+
+        <script>
+            window.addEventListener('mouseover', initLandbot, { once: true });
+            window.addEventListener('touchstart', initLandbot, { once: true });
+            var myLandbot;
+            function initLandbot() {
+              if (!myLandbot) {
+                    var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+                s.addEventListener('load', function() {
+                  var myLandbot = new Landbot.Livechat({
+                    configUrl: 'https://chats.landbot.io/v3/H-1260315-NT1FXO03S60N61C6/index.json',
+                  });
+                });
+                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+              }
+            }
+            </script>
+           
+ <!-- JavaScript Libraries -->
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+      
+    
+     
+    </body>
+
+    <!-- Footer Start -->
+    <footer >
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="footer-contact">
+                                    <h2>Nuestra dirección</h2>
+                                    <p><i class="fa fa-map-marker-alt"></i>123 , Lima, Peru</p>
+                                    <p><i class="fa fa-phone-alt"></i>+51 970 822 833</p>
+                                    <p><i class="fa fa-envelope"></i>info@lifepleasure.com</p>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="footer-link">
+                                    <h2>Enlaces Rapidos</h2>
+                                    <a href="index.html">INICIO</a>
+                                    <a href="nosotros.html">NOSOTROS</a>
+                                    <a href="menu.html">MENU</a>
+                                    <a href="reserva.html">RESERVA</a>
+                                    <a href="contact.html">CONTACTO</a>
+                                    <a href="equipo.html">EQUIPO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="footer-newsletter">
+                            <h2>Redes Sociales</h2>
+                            <div class="footer-social">
+                                <a href="https://twitter.com/LifePleasure_pe"target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/Life-Pleasure-104353185348397/?ref=page_internal" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.youtube.com/channel/UC8f1Ha4eclCI0oSUeOn4Fvw/videos"target="_blank"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.instagram.com/Life.Pleasure.pe/"target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/life-pleasure-478449243/"target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+       <!-- Footer End -->
+</html>

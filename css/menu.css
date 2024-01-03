@@ -1,0 +1,413 @@
+
+/****************menu***************/
+body{
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+}
+.navbar {
+    position: relative;
+    transition: .5s;
+    z-index: 999;
+}
+
+.navbar.nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.navbar .navbar-brand {
+    margin: 0;
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 0px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    transition: .5s;
+    
+}
+
+.navbar .navbar-brand span {
+    color: #15ff00;
+}
+
+.navbar .navbar-brand:hover {
+    color: #ffffff;
+}
+
+.navbar .navbar-brand:hover span {
+    color: #ffffff;
+}
+
+.navbar .navbar-brand img {
+    max-width: 100%;
+    max-height: 40px;
+}
+
+.navbar .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #f8f9fa;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        padding: 30px 60px;
+        background: transparent !important;
+        z-index: 9;
+    }
+    
+    .navbar.nav-sticky {
+        padding: 10px 60px;
+        background: #ffffff !important;
+    }
+    
+    .navbar .navbar-brand {
+        color: #ffffff;
+    }
+    
+    .navbar.nav-sticky .navbar-brand {
+        color: #ffffff;
+    }
+
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .nav-link:focus {
+        padding: 10px 10px 8px 10px;
+        font-family: 'Nunito', sans-serif;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .navbar-light.nav-sticky .navbar-nav .nav-link,
+    .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
+        color: #666666;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link.active {
+        color: #15ff00;
+    }
+    
+    .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
+    .navbar-light.nav-sticky .navbar-nav .nav-link.active {
+        color: #15ff00;
+    }
+}
+
+@media (max-width: 991.98px) {   
+    .navbar {
+        padding: 15px;
+        background: #ffffff !important;
+    }
+    
+    .navbar .navbar-brand {
+        color: #15ff00;
+    }
+    
+    .navbar .navbar-nav {
+        margin-top: 15px;
+    }
+    
+    .navbar a.nav-link {
+        padding: 5px;
+    }
+    
+    .navbar .dropdown-menu {
+        box-shadow: none;
+    }
+}
+
+
+
+/*******************************/
+/******* PORTADA*******/
+/*******************************/
+.page-header {
+    position: relative;
+    margin-bottom: 45px;
+    padding: 150px 0 90px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/portadamenu.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-header h2 {
+    position: relative;
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: 700;
+    font-family: 'Caveat Brush', cursive;
+}
+
+
+
+
+@media (max-width: 767.98px) {
+    .page-header h2 {
+        font-size: 35px;
+    }
+    
+    .page-header a {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+/*******************************/
+/*********** Menu CSS **********/
+/*******************************/
+.menu {
+    position: relative;
+    padding: 45px 0 15px 0;
+}
+
+
+.menu .menu-tab {
+    position: relative;
+    
+}
+
+.menu .menu-tab img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+
+.menu .menu-tab .tab-content {
+    padding: 30px 0 0 0;
+    background: transparent;
+}
+
+.menu .menu-tab .tab-content .container {
+    padding: 0;
+}
+
+.menu .menu-item {
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.menu .menu-img {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.menu .menu-img img {
+    width: 100%;
+    border-radius: 100px;
+}
+
+.menu .menu-text {
+    width: calc(100% - 100px);
+}
+
+.menu .menu-text h3 {
+    position: relative;
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.menu .menu-text h3::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 13px;
+    left: 0;
+    border-top: 2px dotted #cccccc;
+    z-index: -1;
+}
+
+
+
+.menu .menu-text h3 strong {
+    
+    float: right;
+    padding-left: 5px;
+  
+}
+
+.menu .menu-text p {
+    position: relative;
+    margin: 5px 0 0 0;
+    float: left;
+    display: block;
+}
+
+@media(max-width: 575.98px) {
+    .menu .menu-text p,
+    .menu .menu-text h3,
+    .menu .menu-text h3 span,
+    .menu .menu-text h3 strong {
+        display: block;
+        float: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .menu .menu-text h3 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    
+    .menu .menu-text h3 span {
+        margin-bottom: 3px;
+    }
+    
+    .menu .menu-text h3::after {
+        display: none;
+    }
+}
+
+
+/*******************************/
+/********* Footer CSS **********/
+/*******************************/
+
+footer {
+    background-color: rgb(0, 0, 0);
+}
+
+.footer {
+
+    position: relative;
+    margin-top: 45px;
+    padding-top: 90px;
+    background: rgba(0, 0, 0, .04);
+}
+
+.footer .footer-contact,
+.footer .footer-link,
+.footer .footer-newsletter {
+    position: relative;
+    margin-bottom: 45px;
+    color: #ffffff;
+}
+
+.footer .footer-contact h2,
+.footer .footer-link h2,
+.footer .footer-newsletter h2 {
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #15ff00;
+}
+
+
+
+.footer .footer-link a {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.footer .footer-link a::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    color: #15ff00;
+}
+
+
+
+.footer .footer-contact p i {
+    width: 25px;
+    color: #15ff00;
+}
+
+.footer .footer-social {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+}
+
+.footer .footer-social a {
+    display: inline-block;
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #15ff00;
+    border-radius: 35px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer .footer-social a:hover {
+    background: #719a0a;
+}
+
+.footer .footer-social a:last-child {
+    margin: 0;
+}
+
+.footer .footer-newsletter .form {
+    position: relative;
+    width: 100%;
+}
+
+.footer .footer-newsletter input {
+    height: 60px;
+    background: transparent;
+    border: 1px solid #15ff00;
+    border-radius: 5px;
+}
+
+.footer .footer-newsletter .btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    height: 44px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer .copyright {
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    background: #ffffff;
+}
+
+.footer .copyright p {
+    margin: 0;
+    display: inline-block;
+    color: #454545;
+}
+
+.footer .copyright p a {
+    color: #15ff00;
+}
+
+.footer .copyright p a:hover {
+    color: #719a0a;
+}
